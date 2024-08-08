@@ -12,7 +12,6 @@ async function fetchComments() {
     try {
         const response = await fetch(apiUrl);
         const comments = await response.json();
-        const commentDiv = document.getElementById("comments");
 
         // 3. 여기에 slice 메서드를 활용하여 API에서 받아온 결과 배열에서
         //     0번째부터 9번째 값까지를 복사한 새로운 배열인 slicedData를 만들어주세요.
